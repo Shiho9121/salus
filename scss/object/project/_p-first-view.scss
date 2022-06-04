@@ -1,0 +1,16 @@
+.p-first-view {
+    position: relative;
+    &__text {
+        img {
+            position: absolute;
+            top: 22%;
+            left: 7%;
+            width: 35%;
+        }
+    }
+    &__img {
+        img {
+            width: 100%;
+        }
+    }
+}

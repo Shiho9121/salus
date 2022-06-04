@@ -1,0 +1,27 @@
+.p-nav{
+    &--header {
+        justify-content: space-between;
+        padding: 0 8%;
+        font-weight: bold;
+        nav {
+            ul {
+                margin: 3rem 0;
+                align-items: center;
+                li {
+                    &:not(:last-of-type) {
+                        margin-right: 4rem;
+                    }
+                    &:last-of-type {
+                        a {
+                            background: rgb(77,97,208);
+                            background: linear-gradient(90deg, rgba(77,97,208,1) 0%, rgba(84,195,235,1) 100%);
+                            color: #fff;
+                            padding: .7rem 1rem;
+                            border-radius: 20px;
+                        }
+                    }    
+                }
+            }
+        }
+    }
+}

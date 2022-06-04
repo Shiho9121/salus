@@ -1,5 +1,15 @@
 //project
+//top
+@use "./object/project/p-nav" as *;
+@use "./object/project/p-first-view" as *;
+@use "./object/project/p-about" as *;
+@use "./object/project/p-business" as *;
 
 //component
+@use "./object/component/c-heading" as *;
+@use "./object/component/c-button" as *;
 
 //utility
+@use "./object/utility/u-emmet" as *;
+@use "./object/utility/u-margin" as *;
+@use "./object/utility/u-padding" as *;

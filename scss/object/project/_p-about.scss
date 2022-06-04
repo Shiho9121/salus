@@ -1,0 +1,18 @@
+.p-about {
+    background-color: #fff;
+    border-radius: 0 0 0 4rem;
+    margin-left: 10rem;
+    padding: 10.5rem 10.764% 8.5rem;
+    background-image: url("../img/about-us.svg");
+    background-repeat: no-repeat;
+    background-size: 60rem;
+    &__text {
+        text-align: center;
+        margin-top: 3rem;
+        p {
+            display: inline-block;
+            text-align: left;
+            line-height: 2;
+        }
+    }
+}
