@@ -234,6 +234,76 @@
   list-style-position: inside;
 }
 
+.p-contact {
+  background-color: #fff;
+  margin-left: 10rem;
+  padding: 10.5rem 10.764% 8.5rem;
+}
+.p-contact__list {
+  margin-top: 3rem;
+}
+.p-contact__list label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.p-contact__list label:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.p-contact__list label span {
+  width: 35%;
+}
+.p-contact__list label input, .p-contact__list label select, .p-contact__list label textarea {
+  border: 1px solid #BCBCBC;
+  border-radius: 0.5rem;
+  width: 65%;
+  height: 3rem;
+  padding: 0 0.5rem;
+}
+.p-contact__list label textarea {
+  height: 10rem;
+}
+.p-contact__list label input[type=checkbox] {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+.p-contact__address {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.p-contact__address--title {
+  width: 35%;
+}
+.p-contact__address--post {
+  align-items: baseline;
+}
+.p-contact__address--post input[type=text] {
+  width: 50%;
+  margin: 0 1rem;
+}
+.p-contact__address--post input[type=button] {
+  color: #fff;
+  background-color: #589FC1;
+  border-radius: 20px;
+  border: 0;
+  padding: 0.5rem 1rem;
+  box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
+}
+.p-contact__address--text input {
+  width: 100%;
+}
+.p-contact__address ul {
+  width: 65%;
+}
+.p-contact__address ul li input {
+  border: 1px solid #BCBCBC;
+  border-radius: 0.5rem;
+  height: 3rem;
+  margin-bottom: 3rem;
+  padding: 0 0.5rem;
+}
+
 .c-heading h2 {
   font-size: 2rem;
   font-weight: bold;
@@ -256,6 +326,25 @@
   border-radius: 20px;
   padding: 1rem 5.5rem;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
+}
+
+.c-contact__title {
+  align-items: center;
+  align-self: flex-start;
+  padding-top: 11px;
+  font-weight: bold;
+}
+.c-contact__required {
+  padding: 0.5rem;
+  color: #fff;
+  line-height: 1;
+  background-color: #E57474;
+  border-radius: 8px;
+  width: auto !important;
+  margin-left: 0.5rem;
+}
+.c-contact__checkbox {
+  margin-left: 35%;
 }
 
 .df {

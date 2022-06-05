@@ -9,10 +9,13 @@
 //company
 @use "./object/project/p-company" as *;
 @use "./object/project/p-access" as *;
+//contact
+@use "./object/project/p-contact" as *;
 
 //component
 @use "./object/component/c-heading" as *;
 @use "./object/component/c-button" as *;
+@use "./object/component/c-contact" as *;
 
 //utility
 @use "./object/utility/u-emmet" as *;
