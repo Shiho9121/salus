@@ -6,13 +6,7 @@
     &--about, &--news {
         text-align: center;
     }
-    &--business {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-    &--topics {
-        max-width: 1100px;
-        margin: 0 auto;
+    &--topics, &--access {
         z-index: 1;
         position: relative;
     }

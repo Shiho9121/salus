@@ -1,0 +1,27 @@
+.p-company {
+    background-color: #fff;
+    border-radius: 0 0 0 4rem;
+    margin-left: 10rem;
+    padding: 10.5rem 10.764% 8.5rem;
+    background-image: url("../img/company.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    &__list {
+        margin-top: 3rem;
+        dl {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            dt {
+                padding: 2rem 1rem;
+                width: 160px;
+                border-bottom: 2px solid #589FC1;
+            }
+            dd {
+                padding: 2rem 1rem;
+                width: calc(100% - 160px);
+                border-bottom: 1px solid #D6D6D6;
+            }
+        }
+    }
+}

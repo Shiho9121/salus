@@ -6,6 +6,9 @@
 @use "./object/project/p-business" as *;
 @use "./object/project/p-news" as *;
 @use "./object/project/p-topics" as *;
+//company
+@use "./object/project/p-company" as *;
+@use "./object/project/p-access" as *;
 
 //component
 @use "./object/component/c-heading" as *;
