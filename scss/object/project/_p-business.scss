@@ -2,11 +2,40 @@
     background-color: #fff;
     &__back {
         background-color: #ECF1F4;
-        border-radius: 0 4rem 0 0;
+        border-radius: 0 4rem 4rem 0;
         margin-right: 10rem;
         padding: 10.5rem 10.764% 8.5rem;
-        // background-image: url("../img/about-us.svg");
-        // background-repeat: no-repeat;
-        // background-size: 60rem;    
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 50rem;
+            height: 15rem;
+            background-image: url("../img/project.svg");
+            background-repeat: no-repeat;
+            background-size: 60rem;
+            top: 0;
+            right: 0;
+        }
     }
+    &__list {
+        margin-top: 3rem;
+        justify-content: center;
+    }
+    &__box {
+        &:not(:last-of-type) {
+            margin-right: 4rem;
+        }    
+        &--img {
+            img {
+                width: 100%;
+                border-radius: 1rem;
+            }
+        }
+        &--name {
+            margin-top: 2rem;
+            text-align: center;
+        }
+    }
+
 }

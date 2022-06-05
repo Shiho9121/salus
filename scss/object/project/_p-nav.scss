@@ -24,4 +24,22 @@
             }
         }
     }
+    &--footer {
+        color: #fff;
+        padding: 3rem 8%;
+        align-items: center;
+        nav {
+            ul {
+                li {
+                    font-weight: bold;
+                    &:not(:last-of-type) {
+                        margin-right: 4rem;
+                    }
+                }
+            }
+        }
+        &--copyright {
+            margin-left: auto;
+        }
+    }
 }

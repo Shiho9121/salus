@@ -4,6 +4,8 @@
 @use "./object/project/p-first-view" as *;
 @use "./object/project/p-about" as *;
 @use "./object/project/p-business" as *;
+@use "./object/project/p-news" as *;
+@use "./object/project/p-topics" as *;
 
 //component
 @use "./object/component/c-heading" as *;
