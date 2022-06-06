@@ -3,7 +3,7 @@
 @use "./object/project/p-nav" as *;
 @use "./object/project/p-first-view" as *;
 @use "./object/project/p-about" as *;
-@use "./object/project/p-business" as *;
+@use "./object/project/p-project" as *;
 @use "./object/project/p-news" as *;
 @use "./object/project/p-topics" as *;
 //company
@@ -11,6 +11,8 @@
 @use "./object/project/p-access" as *;
 //contact
 @use "./object/project/p-contact" as *;
+//project-detail
+@use "./object/project/p-project-detail" as *;
 
 //component
 @use "./object/component/c-heading" as *;
