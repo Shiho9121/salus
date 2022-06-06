@@ -363,13 +363,14 @@
   font-weight: bold;
 }
 .c-contact__required {
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
   color: #fff;
   line-height: 1;
   background-color: #E57474;
   border-radius: 8px;
   width: auto !important;
   margin-left: 0.5rem;
+  font-size: 0.8rem;
 }
 .c-contact__checkbox {
   margin-left: 35%;

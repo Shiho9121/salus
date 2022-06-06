@@ -6,13 +6,14 @@
         font-weight: bold;
     }
     &__required {
-        padding: .5rem;
+        padding: .3rem .5rem;
         color: #fff;
         line-height: 1;
         background-color: #E57474;
         border-radius: 8px;
         width: auto !important;
         margin-left: .5rem;
+        font-size: .8rem;
     }
     &__checkbox {
         margin-left: 35%;
