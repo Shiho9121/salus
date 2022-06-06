@@ -238,6 +238,9 @@
   background-color: #fff;
   margin-left: 10rem;
   padding: 10.5rem 10.764% 8.5rem;
+  background-image: url("../img/contact.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 .p-contact__list {
   margin-top: 3rem;
@@ -260,8 +263,15 @@
   height: 3rem;
   padding: 0 0.5rem;
 }
+.p-contact__list label select {
+  background-image: url("../img/arrow-under.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
+}
 .p-contact__list label textarea {
   height: 10rem;
+  padding: 1rem 0.5rem;
 }
 .p-contact__list label input[type=checkbox] {
   width: 2rem;
@@ -290,13 +300,19 @@
   padding: 0.5rem 1rem;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
 }
-.p-contact__address--text input {
+.p-contact__address--text input, .p-contact__address--text select {
   width: 100%;
+}
+.p-contact__address--text select {
+  background-image: url("../img/arrow-under.svg");
+  background-position: right 10px center;
+  background-repeat: no-repeat;
+  background-size: 13px 13px;
 }
 .p-contact__address ul {
   width: 65%;
 }
-.p-contact__address ul li input {
+.p-contact__address ul li input, .p-contact__address ul li select {
   border: 1px solid #BCBCBC;
   border-radius: 0.5rem;
   height: 3rem;
@@ -327,6 +343,18 @@
   padding: 1rem 5.5rem;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
 }
+.c-button--confirmation {
+  text-align: center;
+  margin-top: 4rem;
+}
+.c-button--confirmation input {
+  background-color: #E57474;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 1rem 5.5rem;
+  box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
+}
 
 .c-contact__title {
   align-items: center;
@@ -345,6 +373,16 @@
 }
 .c-contact__checkbox {
   margin-left: 35%;
+}
+.c-contact__checkbox label a span {
+  width: auto;
+  color: #5DA5D9;
+  border-bottom: 1px solid #5DA5D9;
+  font-weight: bold;
+}
+.c-contact__checkbox--icon {
+  color: #3E4D62;
+  margin-left: 0.5rem;
 }
 
 .df {

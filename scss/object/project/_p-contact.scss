@@ -2,9 +2,9 @@
     background-color: #fff;
     margin-left: 10rem;
     padding: 10.5rem 10.764% 8.5rem;
-    // background-image: url("../img/company.svg");
-    // background-repeat: no-repeat;
-    // background-size: auto;
+    background-image: url("../img/contact.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
     &__list {
         margin-top: 3rem;
         label {
@@ -24,8 +24,15 @@
                 height: 3rem;
                 padding: 0 .5rem;
             }
+            select {
+                background-image: url('../img/arrow-under.svg');
+                background-position: right 10px center;
+                background-repeat: no-repeat;
+                background-size: 13px 13px;
+            }    
             textarea {
                 height: 10rem;
+                padding: 1rem .5rem;
             }
             input[type="checkbox"] {
                 width: 2rem;
@@ -58,14 +65,20 @@
             }
         }
         &--text {
-            input {
+            input, select {
                 width: 100%;
+            }
+            select {
+                background-image: url('../img/arrow-under.svg');
+                background-position: right 10px center;
+                background-repeat: no-repeat;
+                background-size: 13px 13px;
             }
         }
         ul {
             width: 65%;
             li {
-                input {
+                input,select {
                     border: 1px solid #BCBCBC;
                     border-radius: .5rem;
                     height: 3rem;
