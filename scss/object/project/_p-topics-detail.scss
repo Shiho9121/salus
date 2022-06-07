@@ -1,0 +1,39 @@
+.p-topics-detail {
+    background-color: #fff;
+    margin-left: 10rem;
+    padding: 10.5rem 10.764% 8.5rem;
+    background-image: url("../img/topics-detail.svg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    &__explanation {
+        margin-top: 1rem;
+        line-height: 2;
+        p {
+            max-width: 48em;
+        }
+    }
+    &__contents {
+        margin-top: 3rem;
+    }
+    &__introduction {
+        width: calc(100% / 3);
+        padding: 1.5rem;
+        box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 0px 0px 0px 1px rgba(10,10,10,0.02);
+        &:not(:last-of-type) {
+            margin-right: 1.5rem;
+        }
+        &--title {
+            h3 {
+                font-weight: bold;
+            }
+        }
+        &--list {
+            ul {
+                list-style: disc;
+                list-style-position: inside;
+                margin-top: 1rem;
+                line-height: 2;
+            }    
+        }
+    }
+}
