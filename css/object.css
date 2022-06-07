@@ -383,6 +383,30 @@
   line-height: 2;
 }
 
+.p-topics-press-release {
+  margin-top: 3rem;
+}
+.p-topics-press-release__pharmaceuticals h3 {
+  font-weight: bold;
+}
+.p-topics-press-release__pharmaceuticals:last-of-type {
+  margin-top: 3rem;
+}
+.p-topics-press-release__list {
+  margin-top: 1.5rem;
+}
+.p-topics-press-release__list ul li {
+  padding: 1.5rem 0;
+  align-items: center;
+  border-bottom: 1px solid #D6D6D6;
+}
+.p-topics-press-release__list ul li:first-of-type {
+  border-top: 1px solid #D6D6D6;
+}
+.p-topics-press-release__list ul li div {
+  margin-right: 2rem;
+}
+
 .c-heading h2 {
   font-size: 2rem;
   font-weight: bold;
