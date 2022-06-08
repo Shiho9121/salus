@@ -10,12 +10,44 @@
 .p-nav--header nav ul li:not(:last-of-type) {
   margin-right: 4rem;
 }
-.p-nav--header nav ul li:last-of-type a {
+.p-nav--header--contact a {
   background: #4d61d0;
   background: linear-gradient(90deg, #4d61d0 0%, #54c3eb 100%);
   color: #fff;
   padding: 0.7rem 1rem;
   border-radius: 20px;
+}
+.p-nav--project > a {
+  padding-bottom: 3rem;
+}
+.p-nav--project--sub {
+  display: none;
+  position: absolute;
+  background-color: #589FC1;
+  padding-bottom: 3rem;
+  margin-bottom: 0 !important;
+  margin-top: 1.5rem !important;
+  padding: 1rem;
+}
+.p-nav--project li {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0;
+  margin-right: 0 !important;
+}
+.p-nav--project li:nth-of-type(1) {
+  border-bottom: 1px solid;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+}
+.p-nav--project li:nth-of-type(2) {
+  border-bottom: 1px solid;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.p-nav--project li:nth-of-type(3) {
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 .p-nav--footer {
   color: #fff;

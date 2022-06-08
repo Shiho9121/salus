@@ -11,16 +11,50 @@
                     &:not(:last-of-type) {
                         margin-right: 4rem;
                     }
-                    &:last-of-type {
-                        a {
-                            background: rgb(77,97,208);
-                            background: linear-gradient(90deg, rgba(77,97,208,1) 0%, rgba(84,195,235,1) 100%);
-                            color: #fff;
-                            padding: .7rem 1rem;
-                            border-radius: 20px;
-                        }
-                    }    
                 }
+            }
+        }
+        &--contact {
+            a {
+                background: rgb(77,97,208);
+                background: linear-gradient(90deg, rgba(77,97,208,1) 0%, rgba(84,195,235,1) 100%);
+                color: #fff;
+                padding: .7rem 1rem;
+                border-radius: 20px;
+            }
+        }
+    }
+    &--project {
+        & > a {
+            padding-bottom: 3rem;
+        }
+        &--sub {
+            display: none;
+            position: absolute;
+            background-color: #589FC1;
+            padding-bottom: 3rem;
+            margin-bottom: 0 !important;
+            margin-top: 1.5rem !important;
+            padding: 1rem;
+        }
+        li {
+            font-size: 1.3rem;
+            color: #fff;
+            margin: 0;
+            margin-right: 0 !important;
+            &:nth-of-type(1) {
+                border-bottom: 1px solid;
+                padding-top: .5rem;
+                padding-bottom: 1.5rem;
+            }
+            &:nth-of-type(2) {
+                border-bottom: 1px solid;
+                padding-top: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+            &:nth-of-type(3) {
+                padding-top: 1.5rem;
+                padding-bottom: .5rem;
             }
         }
     }

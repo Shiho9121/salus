@@ -2,16 +2,19 @@
   max-width: 1100px;
   margin: 0 auto;
 }
-.l-wrapper--access {
-  padding: 0;
-}
 
 .l-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
   background-color: #fff;
 }
 
 main {
   min-height: calc(100vh - 228px);
+  margin-top: 114px;
 }
 
 .l-footer {
