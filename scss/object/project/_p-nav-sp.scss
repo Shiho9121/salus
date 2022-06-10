@@ -58,6 +58,13 @@
                 font-weight: 500;
                 color: #fff;
                 border-bottom: 1px solid #fff;
+                a {
+                    justify-content: space-between;
+                    .material-symbols-outlined {
+                        transform: none;
+                        background-color: transparent;
+                    }
+                }
             }
         }
         &.c-active {

@@ -129,6 +129,13 @@
   color: #fff;
   border-bottom: 1px solid #fff;
 }
+.p-nav-sp__list ul li a {
+  justify-content: space-between;
+}
+.p-nav-sp__list ul li a .material-symbols-outlined {
+  transform: none;
+  background-color: transparent;
+}
 .p-nav-sp__list.c-active {
   transform: translateX(0%);
   visibility: visible;
@@ -592,6 +599,18 @@
 .c-active span:nth-of-type(3) {
   top: 0.8rem;
   transform: rotate(45deg);
+}
+
+.c-back-dark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: rgba(3, 3, 3, 0.5);
+  transition: all 0.5s 0s ease;
+  display: none;
 }
 
 .df {
