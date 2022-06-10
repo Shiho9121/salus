@@ -1,6 +1,8 @@
+@use "../../foundations/responsive" as *;
+
 .p-nav{
     &--header {
-        justify-content: space-between;
+        justify-content: flex-end;
         padding: 0 8%;
         font-weight: bold;
         nav {
@@ -22,6 +24,9 @@
                 padding: .7rem 1rem;
                 border-radius: 20px;
             }
+        }
+        @include mq() {
+            display: none !important;
         }
     }
     &--project {

@@ -1,6 +1,7 @@
 //project
 //top
 @use "./object/project/p-nav" as *;
+@use "./object/project/p-nav-sp" as *;
 @use "./object/project/p-first-view" as *;
 @use "./object/project/p-about" as *;
 @use "./object/project/p-project" as *;
@@ -21,6 +22,7 @@
 @use "./object/component/c-heading" as *;
 @use "./object/component/c-button" as *;
 @use "./object/component/c-contact" as *;
+@use "./object/component/c-active" as *;
 
 //utility
 @use "./object/utility/u-emmet" as *;

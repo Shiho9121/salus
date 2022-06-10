@@ -1,5 +1,5 @@
 .p-nav--header {
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 0 8%;
   font-weight: bold;
 }
@@ -16,6 +16,11 @@
   color: #fff;
   padding: 0.7rem 1rem;
   border-radius: 20px;
+}
+@media screen and (max-width: 1024px) {
+  .p-nav--header {
+    display: none !important;
+  }
 }
 .p-nav--project > a {
   padding-bottom: 3rem;
@@ -62,6 +67,71 @@
 }
 .p-nav--footer--copyright {
   margin-left: auto;
+}
+
+.p-nav-sp__hamburger {
+  display: none;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 5px;
+  right: 0;
+  top: 3rem;
+  width: 4rem;
+  height: 28px;
+  margin-right: 5%;
+  z-index: 3;
+}
+.p-nav-sp__hamburger span {
+  display: inline-block;
+  transition: all 0.4s;
+  position: absolute;
+  right: 0;
+  height: 1px;
+  border-radius: 2px;
+  background: #3E4D62;
+  width: 3rem;
+}
+.p-nav-sp__hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.p-nav-sp__hamburger span:nth-of-type(2) {
+  top: 0.8rem;
+  width: 4rem;
+}
+.p-nav-sp__hamburger span:nth-of-type(3) {
+  top: 1.6rem;
+}
+@media screen and (max-width: 1024px) {
+  .p-nav-sp__hamburger {
+    display: block;
+  }
+}
+.p-nav-sp__list {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: #589FC1;
+  height: 100vh;
+  width: 50vw;
+  align-items: center;
+  transform: translateX(100%);
+  transition: all 0.6s;
+  padding-top: 8rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.p-nav-sp__list ul li {
+  margin-bottom: 3rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.p-nav-sp__list.c-active {
+  transform: translateX(0%);
+  visibility: visible;
 }
 
 .p-first-view {
@@ -507,6 +577,21 @@
 .c-contact__checkbox--icon {
   color: #3E4D62;
   margin-left: 0.5rem;
+}
+
+.c-active span {
+  background-color: #fff;
+}
+.c-active span:nth-of-type(1) {
+  top: 0.8rem;
+  transform: rotate(-45deg);
+}
+.c-active span:nth-of-type(2) {
+  display: none;
+}
+.c-active span:nth-of-type(3) {
+  top: 0.8rem;
+  transform: rotate(45deg);
 }
 
 .df {
