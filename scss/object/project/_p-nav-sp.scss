@@ -50,6 +50,10 @@
         padding-top: 8rem;
         padding-left: 3rem;
         padding-right: 3rem;
+        @include mq() {
+            height: 100%;
+            width: 80%;
+        }
         ul {
             li {
                 margin-bottom: 3rem;

@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-news {
     background-color: #fff;
     border-radius: 4rem 0 0 4rem;
@@ -7,6 +9,13 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top;
+    @include mq(sm) {
+        border-radius: 2rem 0 0 2rem;
+        margin-left: 5%;
+        padding: 3.5rem 10.764% 4.5rem;
+        background-size: 70%;
+        background-position: 64% 0;
+    }
     &__list {
         margin-top: 3rem;
         &--icon {

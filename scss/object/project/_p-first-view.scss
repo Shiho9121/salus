@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-first-view {
     position: relative;
     &__text {
@@ -6,12 +8,20 @@
             top: 22%;
             left: 7%;
             width: 35%;
+            @include mq(sm) {
+                top: 7%;
+                left: 5%;
+                width: auto;
+            }
         }
     }
     &__img {
         img {
             width: 100%;
             aspect-ratio: 16 / 9;
+            @include mq(sm) {
+                aspect-ratio: 3 / 4;
+            }
         }
     }
 }

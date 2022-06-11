@@ -1,10 +1,19 @@
+@use "../../foundations/responsive" as *;
+
 .c-heading {
     h2 {
         font-size: 2rem;
         font-weight: bold;
+        z-index: 1;
+        position: relative;
     }
     &--about, &--news {
         text-align: center;
+    }
+    &--news {
+        @include mq(sm) {
+            margin-top: 2rem;
+        }
     }
     &--topics, &--access {
         z-index: 1;

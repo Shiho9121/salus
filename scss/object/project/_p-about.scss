@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-about {
     background-color: #fff;
     border-radius: 0 0 0 4rem;
@@ -6,9 +8,18 @@
     background-image: url("../img/about-us.svg");
     background-repeat: no-repeat;
     background-size: 60rem;
+    @include mq(sm) {
+        border-radius: 0 0 0 2rem;
+        margin-left: 5%;
+        padding: 3.5rem 10.764% 4.5rem;
+        background-size: 100vw;
+    }
     &__text {
         text-align: center;
         margin-top: 3rem;
+        @include mq(sm) {
+            margin-top: 2rem;
+        }
         p {
             display: inline-block;
             text-align: left;
