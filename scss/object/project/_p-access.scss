@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-access {
     background-color: #fff;
     &__back {
@@ -6,6 +8,14 @@
         margin-right: 10rem;
         padding: 10.5rem 10.764% 8.5rem;
         position: relative;
+        @include mq() {
+            margin-right: 5%;
+            padding: 15% 10.764% 15%;
+        }
+        @include mq(sm) {
+            border-radius: 0 2rem 0 0;
+            padding: 3.5rem 10.764% 4.5rem;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -16,15 +26,33 @@
             background-size: auto;
             top: 0;
             right: 0;
+            @include mq() {
+                width: 80%;
+                height: 25%;
+                right: -5%;
+                background-size: 100%;
+            }
+            @include mq(sm) {
+                width: 90%;
+                height: 7rem;
+                background-size: 100vw;
+            }
         }
     }
     &__map {
         margin-top: 3rem;
         aspect-ratio: 16 / 9;
+        @include mq(sm) {
+            margin-top: 2rem;
+            aspect-ratio: 4 / 3;
+        }
         iframe {
             width: 100%;
             height: 100%;
             border-radius: 1rem;
+            @include mq(sm) {
+                border-radius: .5rem;
+            }
         }
     }
     &__text {
@@ -33,6 +61,10 @@
         ul {
             list-style: disc;
             list-style-position: inside;
+            li {
+                padding-left: 1em;
+                text-indent: -1em;
+            }
         }
     }
 

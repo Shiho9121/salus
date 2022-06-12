@@ -22,6 +22,9 @@
     }
     &__list {
         margin-top: 3rem;
+        @include mq(sm) {
+            margin-top: 2rem;
+        }
         &--icon {
             margin-left: auto;
             color: #D6D6D6;

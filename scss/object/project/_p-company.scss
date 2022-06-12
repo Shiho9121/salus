@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-company {
     background-color: #fff;
     border-radius: 0 0 0 4rem;
@@ -6,21 +8,52 @@
     background-image: url("../img/company.svg");
     background-repeat: no-repeat;
     background-size: auto;
+    @include mq() {
+        margin-left: 5%;
+        background-size: 80%;
+        padding: 15% 10.764% 15%;
+    }
+    @include mq(sm) {
+        border-radius: 0 0 0 2rem;
+        background-size: 100%;
+        padding: 3.5rem 10.764% 4.5rem;
+    }
     &__list {
         margin-top: 3rem;
+        @include mq(sm) {
+            margin-top: 2rem;
+        }
         dl {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            @include mq(sm) {
+                display: block;
+            }
+            &:not(:last-of-type) {
+                @include mq(sm) {
+                    padding-bottom: 1.5rem;
+                }
+            }
             dt {
                 padding: 2rem 1rem;
                 width: 160px;
                 border-bottom: 2px solid #589FC1;
+                @include mq(sm) {
+                    padding: 0;
+                    width: 100%;
+                    border-bottom: none;
+                    color: #589FC1;
+                }
             }
             dd {
                 padding: 2rem 1rem;
                 width: calc(100% - 160px);
                 border-bottom: 1px solid #D6D6D6;
+                @include mq(sm) {
+                    padding: 1rem 0;
+                    width: 100%;
+                }
             }
         }
     }

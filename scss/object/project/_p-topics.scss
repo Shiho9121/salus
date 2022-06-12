@@ -40,6 +40,9 @@
     }
     &__box {
         margin-top: 3rem;
+        @include mq(sm) {
+            margin-top: 2rem;
+        }
         &:first-of-type {
             margin-right: 5rem;
             @include mq(sm) {
