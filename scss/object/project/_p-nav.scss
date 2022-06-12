@@ -67,18 +67,46 @@
         color: #fff;
         padding: 3rem 8%;
         align-items: center;
+        @include mq() {
+            display: block !important;
+        }
+        @include mq(sm) {
+            align-items: flex-end;
+        }
         nav {
             ul {
+                @include mq() {
+                    flex-wrap: wrap;
+                }
+                @include mq(sm) {
+                    display: block;
+                }
                 li {
                     font-weight: bold;
+                    @include mq() {
+                        width: 50%;
+                    }
+                    @include mq(sm) {
+                        width: 100%;
+                    }
                     &:not(:last-of-type) {
                         margin-right: 4rem;
+                        @include mq() {
+                            margin-right: 0;
+                            margin-bottom: 2rem;
+                        }
+                        @include mq(sm) {
+                            margin-bottom: 1.5rem;
+                        }
                     }
                 }
             }
         }
         &--copyright {
             margin-left: auto;
+            @include mq() {
+                margin-top: 2rem;
+            }
         }
     }
 }

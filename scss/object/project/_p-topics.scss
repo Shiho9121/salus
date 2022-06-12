@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-topics {
     background-color: #fff;
     &__back {
@@ -6,6 +8,14 @@
         margin-right: 10rem;
         padding: 10.5rem 10.764% 8.5rem;
         position: relative;
+        @include mq() {
+            padding: 15% 10.764% 15%;
+            margin-right: 5%;
+        }
+        @include mq(sm) {
+            margin-right: 5%;
+            padding: 3.5rem 10.764% 4.5rem;
+        }
         &::before {
             content: "";
             position: absolute;
@@ -16,16 +26,39 @@
             background-size: auto;
             top: 0;
             left: 10rem;
+            @include mq() {
+                width: 100%;
+                height: 14rem;
+                margin-left: 5%;
+                left: 0;
+            }
+            @include mq(sm) {
+                height: 7rem;
+                background-size: 100vw;
+            }
         }
     }
     &__box {
         margin-top: 3rem;
         &:first-of-type {
             margin-right: 5rem;
+            @include mq(sm) {
+                margin-right: 0;
+            }
         }
+        &:last-of-type {
+            @include mq(sm) {
+                margin-top: 2rem;
+            }
+        }    
         img {
             width: 100%;
             box-shadow: 0px 4px 9px -5px rgba(0,0,0,0.6);
+        }
+    }
+    &__list {
+        @include mq(sm) {
+            display: block !important;
         }
     }
 }

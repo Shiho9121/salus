@@ -8,6 +8,10 @@
         margin-right: 10rem;
         padding: 10.5rem 10.764% 8.5rem;
         position: relative;
+        @include mq() {
+            padding: 15% 10.764% 15%;
+            margin-right: 5%;
+        }
         @include mq(sm) {
             border-radius: 0 2rem 2rem 0;
             margin-right: 5%;
@@ -23,10 +27,14 @@
             background-size: 60rem;
             top: 0;
             right: 0;
-            @include mq(sm) {
+            @include mq() {
                 width: 100%;
-                height: 5rem;
+                height: 45%;
                 background-size: 100vw;
+                background-position: -200% 0;
+            }
+            @include mq(sm) {
+                height: 7rem;
                 left: 5%;
             }
         }
@@ -34,6 +42,10 @@
     &__list {
         margin-top: 3rem;
         justify-content: center;
+        @include mq() {
+            position: relative;
+            z-index: 0;
+        }
         @include mq(sm) {
             margin-top: 2rem;
             display: block !important;

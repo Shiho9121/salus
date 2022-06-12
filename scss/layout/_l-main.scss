@@ -1,4 +1,9 @@
+@use "../foundations/responsive" as *;
+
 main {
     min-height: calc(100vh - calc(114px + 114px));
     margin-top: 114px;
+    @include mq() {
+        margin-top: 4rem;
+    }
 }

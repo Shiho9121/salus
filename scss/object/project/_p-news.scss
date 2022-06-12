@@ -9,18 +9,25 @@
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top;
+    @include mq() {
+        padding: 15% 10.764% 15%;
+        margin-left: 5%;
+        background-size: 50%;
+    }
     @include mq(sm) {
         border-radius: 2rem 0 0 2rem;
-        margin-left: 5%;
         padding: 3.5rem 10.764% 4.5rem;
-        background-size: 70%;
-        background-position: 64% 0;
+        background-size: 66%;
+        background-position: 65% 0;
     }
     &__list {
         margin-top: 3rem;
         &--icon {
             margin-left: auto;
             color: #D6D6D6;
+            @include mq(sm) {
+                display: none;
+            }
         }
         a {
             display: block;
@@ -32,10 +39,17 @@
             li {
                 padding: 2rem 0;
                 align-items: center;
+                @include mq(sm) {
+                    display: block !important;
+                }
                 div {
                     &:first-child {
                         margin-right: 4rem;
-                    }        
+                    @include mq(sm) {
+                        margin-right: 0;
+                        margin-bottom: 1rem;
+                    }
+                    }
                 }
             }
         }

@@ -1,5 +1,5 @@
 $(function() {
-    $(".p-nav-sp__hamburger").click(function () {
+    $(".c-hamburger").click(function () {
         $(this).toggleClass('c-active');
 
         if ($(this).hasClass('c-active')) {
