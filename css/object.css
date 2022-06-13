@@ -613,19 +613,46 @@
   background-repeat: no-repeat;
   background-size: auto;
 }
+@media screen and (max-width: 1024px) {
+  .p-contact {
+    margin-left: 5%;
+    padding: 15% 5% 15%;
+    background-size: 100%;
+  }
+}
 .p-contact__list {
   margin-top: 3rem;
+}
+@media screen and (max-width: 599px) {
+  .p-contact__list {
+    margin-top: 2rem;
+  }
 }
 .p-contact__list label {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
+@media screen and (max-width: 599px) {
+  .p-contact__list label {
+    display: block !important;
+  }
+}
 .p-contact__list label:not(:last-child) {
   margin-bottom: 3rem;
 }
+@media screen and (max-width: 599px) {
+  .p-contact__list label:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
 .p-contact__list label span {
   width: 35%;
+}
+@media screen and (max-width: 599px) {
+  .p-contact__list label span {
+    width: 100%;
+  }
 }
 .p-contact__list label input, .p-contact__list label select, .p-contact__list label textarea {
   border: 1px solid #BCBCBC;
@@ -634,11 +661,22 @@
   height: 3rem;
   padding: 0 0.5rem;
 }
+@media screen and (max-width: 599px) {
+  .p-contact__list label input, .p-contact__list label select, .p-contact__list label textarea {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
 .p-contact__list label select {
   background-image: url("../img/arrow-under.svg");
   background-position: right 10px center;
   background-repeat: no-repeat;
   background-size: 13px 13px;
+}
+@media screen and (max-width: 599px) {
+  .p-contact__list label select {
+    font-size: 0.9rem;
+  }
 }
 .p-contact__list label textarea {
   height: 10rem;
@@ -649,12 +687,27 @@
   height: 2rem;
   margin-right: 1rem;
 }
+@media screen and (max-width: 599px) {
+  .p-contact__list label input[type=checkbox] {
+    margin-top: 0;
+  }
+}
 .p-contact__address {
   justify-content: space-between;
   align-items: flex-start;
 }
+@media screen and (max-width: 599px) {
+  .p-contact__address {
+    display: block !important;
+  }
+}
 .p-contact__address--title {
   width: 35%;
+}
+@media screen and (max-width: 599px) {
+  .p-contact__address--title {
+    margin-bottom: 0.5rem;
+  }
 }
 .p-contact__address--post {
   align-items: baseline;
@@ -683,12 +736,27 @@
 .p-contact__address ul {
   width: 65%;
 }
+@media screen and (max-width: 599px) {
+  .p-contact__address ul {
+    width: 100%;
+  }
+}
 .p-contact__address ul li input, .p-contact__address ul li select {
   border: 1px solid #BCBCBC;
   border-radius: 0.5rem;
   height: 3rem;
   margin-bottom: 3rem;
   padding: 0 0.5rem;
+}
+@media screen and (max-width: 599px) {
+  .p-contact__address ul li input, .p-contact__address ul li select {
+    margin-bottom: 1.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-contact__address ul li:last-of-type {
+    margin-bottom: 0.5rem;
+  }
 }
 
 .p-project-detail {
@@ -834,6 +902,11 @@
   padding-top: 11px;
   font-weight: bold;
 }
+@media screen and (max-width: 599px) {
+  .c-contact__title {
+    padding-top: 0;
+  }
+}
 .c-contact__required {
   padding: 0.3rem 0.5rem;
   color: #fff;
@@ -846,6 +919,17 @@
 }
 .c-contact__checkbox {
   margin-left: 35%;
+}
+@media screen and (max-width: 599px) {
+  .c-contact__checkbox {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 599px) {
+  .c-contact__checkbox label {
+    display: flex !important;
+    align-items: center;
+  }
 }
 .c-contact__checkbox label a span {
   width: auto;

@@ -1,9 +1,14 @@
+@use "../../foundations/responsive" as *;
+
 .c-contact {
     &__title {
         align-items: center;
         align-self: flex-start;
         padding-top: 11px;
         font-weight: bold;
+        @include mq(sm) {
+            padding-top: 0;
+        }
     }
     &__required {
         padding: .3rem .5rem;
@@ -17,7 +22,14 @@
     }
     &__checkbox {
         margin-left: 35%;
+        @include mq(sm) {
+            margin-left: 0;
+        }
         label {
+            @include mq(sm) {
+                display: flex !important;
+                align-items: center;
+            }
             a {
                 span {
                     width: auto;

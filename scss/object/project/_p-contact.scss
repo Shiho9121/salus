@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-contact {
     background-color: #fff;
     margin-left: 10rem;
@@ -5,17 +7,34 @@
     background-image: url("../img/contact.svg");
     background-repeat: no-repeat;
     background-size: auto;
+    @include mq() {
+        margin-left: 5%;
+        padding: 15% 5% 15%;
+        background-size: 100%;
+    }
     &__list {
         margin-top: 3rem;
+        @include mq(sm) {
+            margin-top: 2rem;
+        }
         label {
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            @include mq(sm) {
+                display: block !important;
+            }
             &:not(:last-child) {
                 margin-bottom: 3rem;
+                @include mq(sm) {
+                    margin-bottom: 2rem;
+                }
             }
             span {
                 width: 35%;
+                @include mq(sm) {
+                    width: 100%;
+                }
             }
             input, select, textarea {
                 border: 1px solid #BCBCBC;
@@ -23,12 +42,19 @@
                 width: 65%;
                 height: 3rem;
                 padding: 0 .5rem;
+                @include mq(sm) {
+                    width: 100%;
+                    margin-top: .5rem;
+                }
             }
             select {
                 background-image: url('../img/arrow-under.svg');
                 background-position: right 10px center;
                 background-repeat: no-repeat;
                 background-size: 13px 13px;
+                @include mq(sm) {
+                    font-size: .9rem;
+                }
             }    
             textarea {
                 height: 10rem;
@@ -38,14 +64,23 @@
                 width: 2rem;
                 height: 2rem;
                 margin-right: 1rem;
+                @include mq(sm) {
+                    margin-top: 0;
+                }
             }
         }
     }
     &__address {
         justify-content: space-between;
         align-items: flex-start;
+        @include mq(sm) {
+            display: block !important;
+        }
         &--title {
             width: 35%;
+            @include mq(sm) {
+                margin-bottom: 0.5rem;
+            }
         }
         &--post {
             align-items: baseline;
@@ -77,6 +112,9 @@
         }
         ul {
             width: 65%;
+            @include mq(sm) {
+                width: 100%;
+            }
             li {
                 input,select {
                     border: 1px solid #BCBCBC;
@@ -84,6 +122,14 @@
                     height: 3rem;
                     margin-bottom: 3rem;
                     padding: 0 .5rem;
+                    @include mq(sm) {
+                        margin-bottom: 1.5rem;
+                    }
+                }
+                &:last-of-type {
+                    @include mq(sm) {
+                        margin-bottom: .5rem;
+                    }
                 }
             }
         }
