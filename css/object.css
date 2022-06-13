@@ -473,7 +473,7 @@
   .p-company {
     border-radius: 0 0 0 2rem;
     background-size: 100%;
-    padding: 3.5rem 10.764% 4.5rem;
+    padding: 3.5rem 5% 4.5rem;
   }
 }
 .p-company__list {
@@ -543,7 +543,7 @@
 @media screen and (max-width: 599px) {
   .p-access__back {
     border-radius: 0 2rem 0 0;
-    padding: 3.5rem 10.764% 4.5rem;
+    padding: 3.5rem 5% 4.5rem;
   }
 }
 .p-access__back::before {
@@ -717,6 +717,7 @@
   margin: 0 1rem;
 }
 .p-contact__address--post input[type=button] {
+  font-size: 0.9rem;
   color: #fff;
   background-color: #589FC1;
   border-radius: 20px;
@@ -767,6 +768,18 @@
   background-repeat: no-repeat;
   background-size: auto;
 }
+@media screen and (max-width: 1024px) {
+  .p-project-detail {
+    margin-left: 5%;
+    padding: 15% 10.764% 15%;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-project-detail {
+    padding: 3.5rem 5% 4.5rem;
+  }
+}
 .p-project-detail__explanation {
   margin-top: 1rem;
   line-height: 2;
@@ -784,6 +797,13 @@
 }
 .p-project-detail__list ul li {
   max-width: 48em;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+@media screen and (max-width: 599px) {
+  .p-project-detail__list ul li {
+    max-width: 100%;
+  }
 }
 
 .p-topics-detail {
@@ -793,6 +813,19 @@
   background-image: url("../img/topics-detail.svg");
   background-repeat: no-repeat;
   background-size: auto;
+}
+@media screen and (max-width: 1024px) {
+  .p-topics-detail {
+    margin-left: 5%;
+    padding: 15% 10.764% 15%;
+    background-size: 90%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-topics-detail {
+    padding: 3.5rem 5% 4.5rem;
+    background-size: 100%;
+  }
 }
 .p-topics-detail__explanation {
   margin-top: 1rem;
@@ -804,13 +837,30 @@
 .p-topics-detail__contents {
   margin-top: 3rem;
 }
+@media screen and (max-width: 599px) {
+  .p-topics-detail__contents {
+    display: block !important;
+    margin-top: 2rem;
+  }
+}
 .p-topics-detail__introduction {
   width: 33.3333333333%;
   padding: 1.5rem;
-  box-shadow: 0px 8px 16px -2px rgba(10, 10, 10, 0.1), 0px 0px 0px 1px rgba(10, 10, 10, 0.02);
+  box-shadow: 0px 4px 17px -5px rgba(10, 10, 10, 0.1), 0px 0px 0px 1px rgba(10, 10, 10, 0.02);
+}
+@media screen and (max-width: 599px) {
+  .p-topics-detail__introduction {
+    width: 100%;
+  }
 }
 .p-topics-detail__introduction:not(:last-of-type) {
   margin-right: 1.5rem;
+}
+@media screen and (max-width: 599px) {
+  .p-topics-detail__introduction:not(:last-of-type) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
 .p-topics-detail__introduction--title h3 {
   font-weight: bold;
@@ -821,9 +871,18 @@
   margin-top: 1rem;
   line-height: 2;
 }
+.p-topics-detail__introduction--list ul li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
 
 .p-topics-press-release {
   margin-top: 3rem;
+}
+@media screen and (max-width: 599px) {
+  .p-topics-press-release {
+    margin-top: 2rem;
+  }
 }
 .p-topics-press-release__pharmaceuticals h3 {
   font-weight: bold;
@@ -839,11 +898,28 @@
   align-items: center;
   border-bottom: 1px solid #D6D6D6;
 }
+@media screen and (max-width: 599px) {
+  .p-topics-press-release__list ul li {
+    padding: 1rem 0;
+    display: block !important;
+  }
+}
 .p-topics-press-release__list ul li:first-of-type {
   border-top: 1px solid #D6D6D6;
 }
 .p-topics-press-release__list ul li div {
   margin-right: 2rem;
+}
+@media screen and (max-width: 599px) {
+  .p-topics-press-release__list ul li div {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-topics-press-release__list ul li div:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .c-heading h2 {

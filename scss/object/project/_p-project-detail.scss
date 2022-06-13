@@ -1,3 +1,5 @@
+@use "../../foundations/responsive" as *;
+
 .p-project-detail {
     background-color: #fff;
     margin-left: 10rem;
@@ -5,6 +7,14 @@
     background-image: url("../img/project-detail.svg");
     background-repeat: no-repeat;
     background-size: auto;
+    @include mq() {
+        margin-left: 5%;
+        padding: 15% 10.764% 15%;
+        background-size: 100%;
+    }
+    @include mq(sm) {
+        padding: 3.5rem 5% 4.5rem;
+    }
     &__explanation {
         margin-top: 1rem;
         line-height: 2;
@@ -20,6 +30,11 @@
             list-style-position: inside;
             li {
                 max-width: 48em;
+                padding-left: 1em;
+                text-indent: -1em;
+                @include mq(sm) {
+                    max-width: 100%;
+                }
             }
         }
     }

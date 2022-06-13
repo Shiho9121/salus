@@ -1,5 +1,10 @@
+@use "../../foundations/responsive" as *;
+
 .p-topics-press-release {
     margin-top: 3rem;
+    @include mq(sm) {
+        margin-top: 2rem;
+    }
     &__pharmaceuticals {
         h3 {
             font-weight: bold;
@@ -15,11 +20,24 @@
                 padding: 1.5rem 0;
                 align-items: center;
                 border-bottom: 1px solid #D6D6D6;
+                @include mq(sm) {
+                    padding: 1rem 0;
+                    display: block !important;
+                }
                 &:first-of-type {
                     border-top: 1px solid #D6D6D6;
                 }
                 div {
                     margin-right: 2rem;
+                    @include mq(sm) {
+                        margin-right: 0;
+                        margin-bottom: .5rem;
+                    }
+                    &:last-of-type {
+                        @include mq(sm) {
+                            margin-bottom: 0;
+                        }
+                    }
                 }
             }
         }
