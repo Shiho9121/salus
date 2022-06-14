@@ -48,7 +48,7 @@
         }
         @include mq(sm) {
             margin-top: 2rem;
-            display: block !important;
+            display: block;
         }
     }
     &__box {

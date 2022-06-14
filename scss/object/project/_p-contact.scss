@@ -18,22 +18,15 @@
             margin-top: 2rem;
         }
         label {
-            display: flex;
             justify-content: flex-start;
             align-items: center;
             @include mq(sm) {
-                display: block !important;
+                display: block;
             }
             &:not(:last-child) {
                 margin-bottom: 3rem;
                 @include mq(sm) {
                     margin-bottom: 2rem;
-                }
-            }
-            span {
-                width: 35%;
-                @include mq(sm) {
-                    width: 100%;
                 }
             }
             input, select, textarea {
@@ -74,7 +67,7 @@
         justify-content: space-between;
         align-items: flex-start;
         @include mq(sm) {
-            display: block !important;
+            display: block;
         }
         &--title {
             width: 35%;

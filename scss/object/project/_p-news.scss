@@ -43,7 +43,7 @@
                 padding: 2rem 0;
                 align-items: center;
                 @include mq(sm) {
-                    display: block !important;
+                    display: block;
                 }
                 div {
                     &:first-child {

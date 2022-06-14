@@ -61,7 +61,7 @@
     }
     &__list {
         @include mq(sm) {
-            display: block !important;
+            display: block;
         }
     }
 }

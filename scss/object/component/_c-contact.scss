@@ -2,11 +2,13 @@
 
 .c-contact {
     &__title {
+        width: 35%;
         align-items: center;
         align-self: flex-start;
         padding-top: 11px;
         font-weight: bold;
         @include mq(sm) {
+            width: 100%;
             padding-top: 0;
         }
     }
@@ -16,7 +18,7 @@
         line-height: 1;
         background-color: #E57474;
         border-radius: 8px;
-        width: auto !important;
+        width: auto;
         margin-left: .5rem;
         font-size: .8rem;
     }
@@ -26,10 +28,6 @@
             margin-left: 0;
         }
         label {
-            @include mq(sm) {
-                display: flex !important;
-                align-items: center;
-            }
             a {
                 span {
                     width: auto;
