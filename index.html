@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/object.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="l-header">
@@ -90,7 +91,7 @@
                 <div class="c-heading c-heading--about">
                     <h2>私たちについて</h2>
                 </div>
-                <div class="p-about__text">
+                <div class="p-about__text" data-aos="fade-up">
                     <p>
                         世界にはまだ解決できていない様々な病気、時代の変化により生まれた新しい病気があります。<br>
                         この問題を解決するために、私たちは日々研究を重ねております。<br>
@@ -111,7 +112,7 @@
                         <h2>事業</h2>
                     </div>
                     <div class="p-project__list df">
-                        <div class="p-project__box">
+                        <div class="p-project__box" data-aos="zoom-out">
                             <a href="./project-pharmaceutical.html">
                                 <div class="p-project__box--img">
                                     <picture>
@@ -127,7 +128,7 @@
                                 </div>    
                             </a>
                         </div>
-                        <div class="p-project__box">
+                        <div class="p-project__box" data-aos="zoom-out" data-aos-offset="150">
                             <a href="./project-pharmaceutical-manufacturing.html">
                                 <div class="p-project__box--img">
                                     <picture>
@@ -143,7 +144,7 @@
                                 </div>    
                             </a>
                         </div>
-                        <div class="p-project__box">
+                        <div class="p-project__box" data-aos="zoom-out"  data-aos-offset="250">
                             <a href="./project-food-additive.html">
                                 <div class="p-project__box--img">
                                     <picture>
@@ -227,7 +228,7 @@
                         <h2>トピックス</h2>
                     </div>
                     <div class="p-topics__list df l-wrapper">
-                        <div class="p-topics__box">
+                        <div class="p-topics__box" data-aos="fade-up">
                             <a href="./topics-research-development.html">
                                 <picture>
                                     <source srcset="./img/webp/salus-banner-1.webp"
@@ -237,7 +238,7 @@
                                 </picture>
                             </a>
                         </div>
-                        <div class="p-topics__box">
+                        <div class="p-topics__box" data-aos="fade-up">
                             <a href="./topics-press-release.html">
                                 <picture>
                                     <source srcset="./img/webp/salus-banner-2.webp"
@@ -272,5 +273,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/nav-project.js" type="text/javascript"></script>
     <script src="./js/header-sp.js" type="text/javascript"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js" type="text/javascript"></script>
 </body>
 </html>
