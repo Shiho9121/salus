@@ -841,6 +841,10 @@
   border-top: 1px solid #D6D6D6;
   border-bottom: 1px solid #D6D6D6;
 }
+.p-news__list a:hover {
+  background-color: #D6D6D6;
+  transition: 0.2s cubic-bezier(0.45, 0, 0.55, 1);
+}
 .p-news__list a:not(:first-of-type) {
   border-top: none;
 }
