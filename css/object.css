@@ -1436,6 +1436,7 @@
   border-radius: 20px;
   padding: 1rem 5.5rem;
   box-shadow: 0px 3px 10px -4px rgba(0, 0, 0, 0.6);
+  position: relative;
 }
 @media screen and (max-width: 599px) {
   .c-button--about a {
@@ -1565,4 +1566,55 @@
   background: rgba(3, 3, 3, 0.5);
   transition: all 0.5s 0s ease;
   display: none;
+}
+
+.c-button--about a:hover {
+  color: #fb4b02;
+  background: transparent;
+}
+.c-button--about a:hover::before {
+  height: 100%;
+}
+.c-button--about a:hover::after {
+  width: 100%;
+}
+.c-button--about a::before, .c-button--about a::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #fb4b02;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.c-button--about a::before {
+  height: 0%;
+  width: 2px;
+}
+.c-button--about a::after {
+  height: 2px;
+  width: 0%;
+}
+.c-button--about a span::before, .c-button--about a span::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #fb4b02;
+  box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, 0.9), -4px -4px 5px 0px rgba(255, 255, 255, 0.9), 7px 7px 20px 0px rgba(0, 0, 0, 0.2), 4px 4px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.c-button--about a span::before {
+  height: 0%;
+  width: 2px;
+}
+.c-button--about a span::after {
+  height: 2px;
+  width: 0%;
+}
+.c-button--about a span:hover::before {
+  height: 100%;
+}
+.c-button--about a span:hover::after {
+  width: 100%;
 }
