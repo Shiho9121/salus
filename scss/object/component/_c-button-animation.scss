@@ -1,9 +1,13 @@
+@use "../../foundations/responsive" as *;
+
 .c-button {
     &--about {
         a {
             &:hover {
-                color: rgba(251, 75, 2, 1);
+                color: #589FC1;
+                border-radius: 0px;
                 background: transparent;
+                transition:.3s ease;
                 &::before {
                     height: 100%;
                 }
@@ -14,9 +18,9 @@
             &::before, &::after {
                 position: absolute;
                 content: "";
-                left: 0;
-                top: 0;
-                background: rgba(251, 75, 2, 1);
+                right: 0;
+                bottom: 0;
+                background: #589FC1;
                 box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
                         -4px -4px 5px 0px rgba(255, 255, 255, .9),
                         7px 7px 20px 0px rgba(0, 0, 0, .2),
@@ -32,12 +36,16 @@
                 width: 0%;
             }
             span {
+                padding: 1rem 5.5rem;
+                @include mq(sm) {
+                    padding: 0;
+                }
                 &::before, &::after {
                     position: absolute;
                     content: "";
-                    right: 0;
-                    bottom: 0;
-                    background: rgba(251, 75, 2, 1);
+                    left: 0;
+                    top: 0;
+                    background: #589FC1;
                     box-shadow: -7px -7px 20px 0px rgba(255, 255, 255, .9),
                             -4px -4px 5px 0px rgba(255, 255, 255, .9),
                             7px 7px 20px 0px rgba(0, 0, 0, .2),
