@@ -1,6 +1,6 @@
 @use "../../foundations/responsive" as *;
 
-.c-button {
+.c-button-animation {
     &--about {
         a {
             &:hover {
@@ -71,5 +71,40 @@
             }
         }
     }
-
+    &--confirmation {
+        input {
+            transition:.1s ease;
+            &:hover {
+               background-color: #fff;
+               color: #E57474;
+               border: 1.5px solid #E57474;
+               transition:.3s ease;
+            }
+        }
+    }
+    &--address {
+        & :last-of-type {
+            transition:.2s ease;
+            &:hover {
+                background-color: #fff;
+                color: #589FC1;
+                border: 1.5px solid #589FC1;
+                transition:.3s ease;
+             }    
+        }
+    }
+    &--privacy-policy {
+        label {
+                a {
+                    span {
+                        transition:.1s ease;
+                        &:hover {
+                            color: #E57474;
+                            border-bottom: 1px solid #E57474;
+                            transition:.3s ease;
+                         }
+                    }
+                }
+        }
+    }
 }

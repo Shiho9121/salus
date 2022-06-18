@@ -16,6 +16,16 @@
     <script src="https://kit.fontawesome.com/35c19a7fc3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- ロード -->
+    <div class="p-loading df">
+        <div class="c-loading">
+            <div class="c-loading__dot"></div>
+            <div class="c-loading__dot"></div>
+            <div class="c-loading__dot"></div>
+            <div class="c-loading__dot"></div>
+        </div>
+    </div>
+    <!-- コンテンツ -->
     <header class="l-header">
         <div class="p-nav p-nav--header df">
             <div class="p-logo">
@@ -25,16 +35,16 @@
             </div>
             <nav>
                 <ul class="p-nav--header__list df">
-                    <li><a href="./company.html">会社概要</a></li>
+                    <li class="c-nav-animation__header"><a href="./company.html">会社概要</a></li>
                     <li class="p-nav--project">
                         <a href="">事業内容</a>
                         <ul class="p-nav--project--sub">
-                            <li><a href="./project-pharmaceutical.html">医薬品研究事業</a></li>
-                            <li><a href="./project-pharmaceutical-manufacturing.html">医薬品製造事業</a></li>
-                            <li><a href="./project-food-additive.html">食品添加物製造事業</a></li>
+                            <a href="./project-pharmaceutical.html"><li class="c-nav-animation__header--sub">医薬品研究事業</li></a>
+                            <a href="./project-pharmaceutical-manufacturing.html"><li class="c-nav-animation__header--sub">医薬品製造事業</li></a>
+                            <a href="./project-food-additive.html"><li class="c-nav-animation__header--sub">食品添加物製造事業</li></a>
                         </ul>    
                     </li>
-                    <li class="p-nav--header__contact"><a href="./contact.html">お問い合わせ</a></li>
+                    <li class="p-nav--header__contact c-nav-animation__header--contact"><a href="./contact.html">お問い合わせ</a></li>
                 </ul>
             </nav>
         </div>
@@ -51,11 +61,11 @@
             </div>
             <nav class="p-nav-sp__list">
                 <ul>
-                    <li><a href="./company.html" class="df">会社概要<span class="material-symbols-outlined">chevron_right</span></a></li>
-                    <li><a href="./project-pharmaceutical.html" class="df">医薬品研究事業<span class="material-symbols-outlined">chevron_right</span></a></li>
-                    <li><a href="./project-pharmaceutical-manufacturing.html" class="df">医薬品製造事業<span class="material-symbols-outlined">chevron_right</span></a></li>
-                    <li><a href="./project-food-additive.html" class="df">食品添加物製造事業<span class="material-symbols-outlined">chevron_right</span></a></li>
-                    <li><a href="./contact.html" class="df">お問い合わせ<span class="material-symbols-outlined">chevron_right</span></a></li>
+                    <a href="./company.html"><li class="df">会社概要<span class="material-symbols-outlined">chevron_right</span></li></a>
+                    <a href="./project-pharmaceutical.html"><li class="df">医薬品研究事業<span class="material-symbols-outlined">chevron_right</span></li></a>
+                    <a href="./project-pharmaceutical-manufacturing.html"><li class="df">医薬品製造事業<span class="material-symbols-outlined">chevron_right</span></li></a>
+                    <a href="./project-food-additive.html"><li class="df">食品添加物製造事業<span class="material-symbols-outlined">chevron_right</span></li></a>
+                    <a href="./contact.html"><li class="df">お問い合わせ<span class="material-symbols-outlined">chevron_right</span></li></a>
                 </ul>
             </nav>
             <div class="c-back-dark"></div>
@@ -101,9 +111,9 @@
                         <div class="p-contact__address df ">
                             <div class="p-contact__address--title c-contact c-contact__title df">住所</div>
                             <ul>
-                                <li class="p-contact__address--post df">
+                                <li class="p-contact__address--post c-button-animation--address df">
                                     〒<input type="text" placeholder="1231234">
-                                    <input type="button" value="住所検索">
+                                    <input type="button" value="住所検索" class="">
                                 </li>
                                 <li class="p-contact__address--text">
                                     <select name="" id="">
@@ -168,7 +178,7 @@
                         <label class="df">
                             <span class="c-contact c-contact__title df">お問い合わせの種類<span class="c-contact c-contact__required">必須</span></span>
                             <select name="" id="">
-                                <option value="">お問い合わせの種類を選択してください</option>
+                                <option value="">種類を選択してください</option>
                                 <option value="製品に関するお問い合わせ">製品に関するお問い合わせ</option>
                                 <option value="採用に関するお問い合わせ">採用に関するお問い合わせ</option>
                                 <option value="その他のお問い合わせ">その他のお問い合わせ</option>
@@ -178,13 +188,13 @@
                             <span class="c-contact c-contact__title df">お問い合わせ内容<span class="c-contact c-contact__required">必須</span></span>
                             <textarea type="textarea" placeholder="お問い合わせ内容を入力してください"></textarea>
                         </label>
-                        <div class="c-contact c-contact__checkbox">
+                        <div class="c-contact c-contact__checkbox c-button-animation--privacy-policy">
                             <label>
                                 <input type="checkbox"><a href=""><span>プライバシーポリシー</span></a>に同意する<i class="fa-solid fa-window-restore c-contact__checkbox--icon"></i>
                             </label>    
                         </div>
                     </div>
-                    <div  class="c-button c-button--confirmation">
+                    <div  class="c-button c-button--confirmation c-button-animation--confirmation">
                         <input type="button" value="確認画面へ">
                     </div>
                 </div>
@@ -195,11 +205,11 @@
         <div class="p-nav p-nav--footer df">
             <nav>
                 <ul class="df">
-                    <li><a href="./company.html">会社概要</a></li>
-                    <li><a href="./project-pharmaceutical.html">医薬品研究事業</a></li>
-                    <li><a href="./project-pharmaceutical-manufacturing.html">医薬品製造事業</a></li>
-                    <li><a href="./project-food-additive.html">食品添加物製造事業</a></li>
-                    <li><a href="./contact.html">お問い合わせ</a></li>
+                    <li class="c-nav-animation--footer"><a href="./company.html">会社概要</a></li>
+                    <li class="c-nav-animation--footer"><a href="./project-pharmaceutical.html">医薬品研究事業</a></li>
+                    <li class="c-nav-animation--footer"><a href="./project-pharmaceutical-manufacturing.html">医薬品製造事業</a></li>
+                    <li class="c-nav-animation--footer"><a href="./project-food-additive.html">食品添加物製造事業</a></li>
+                    <li class="c-nav-animation--footer"><a href="./contact.html">お問い合わせ</a></li>
                 </ul>    
             </nav>
             <div class="p-nav--footer--copyright">
@@ -210,5 +220,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./js/nav-project.js" type="text/javascript"></script>
     <script src="./js/header-sp.js" type="text/javascript"></script>
+    <script src="./js/loading.js" type="text/javascript"></script>
 </body>
 </html>
