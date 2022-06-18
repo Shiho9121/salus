@@ -682,19 +682,20 @@
   padding: 10.5rem 10.764% 8.5rem;
   background-image: url("../img/about-us.svg");
   background-repeat: no-repeat;
-  background-size: 60rem;
+  background-size: auto;
 }
 @media screen and (max-width: 1024px) {
   .p-about {
     margin-left: 5%;
     padding: 15% 10.764% 15%;
-    background-size: 100vw;
+    background-size: 80%;
   }
 }
 @media screen and (max-width: 599px) {
   .p-about {
     border-radius: 0 0 0 2rem;
     padding: 3.5rem 10.764% 4.5rem;
+    background-size: 90%;
   }
 }
 .p-about__text {
@@ -738,26 +739,25 @@
 .p-project__back::before {
   content: "";
   position: absolute;
-  width: 50rem;
-  height: 15rem;
+  width: 707px;
+  height: 181px;
   background-image: url("../img/project.svg");
   background-repeat: no-repeat;
-  background-size: 60rem;
+  background-size: auto;
   top: 0;
   right: 0;
 }
 @media screen and (max-width: 1024px) {
   .p-project__back::before {
-    width: 100%;
-    height: 45%;
-    background-size: 100vw;
-    background-position: -200% 0;
+    width: 80%;
+    height: 35%;
+    background-size: 100%;
   }
 }
 @media screen and (max-width: 599px) {
   .p-project__back::before {
-    height: 7rem;
-    left: 5%;
+    height: 10%;
+    width: 90%;
   }
 }
 .p-project__list {
@@ -814,15 +814,13 @@
   .p-news {
     padding: 15% 10.764% 15%;
     margin-left: 5%;
-    background-size: 50%;
   }
 }
 @media screen and (max-width: 599px) {
   .p-news {
     border-radius: 2rem 0 0 2rem;
     padding: 3.5rem 10.764% 4.5rem;
-    background-size: 66%;
-    background-position: 65% 0;
+    background-size: 60%;
   }
 }
 .p-news__list {
@@ -898,8 +896,8 @@
 .p-topics__back::before {
   content: "";
   position: absolute;
-  width: 50rem;
-  height: 15rem;
+  width: 608px;
+  height: 181px;
   background-image: url("../img/topics.svg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -908,16 +906,18 @@
 }
 @media screen and (max-width: 1024px) {
   .p-topics__back::before {
-    width: 100%;
-    height: 14rem;
+    width: 72%;
+    height: 32%;
     margin-left: 5%;
     left: 0;
+    background-size: 100%;
   }
 }
 @media screen and (max-width: 599px) {
   .p-topics__back::before {
-    height: 7rem;
-    background-size: 100vw;
+    height: 12%;
+    background-size: 90%;
+    width: 100%;
   }
 }
 .p-topics__box {
@@ -970,7 +970,7 @@
 @media screen and (max-width: 599px) {
   .p-company {
     border-radius: 0 0 0 2rem;
-    background-size: 100%;
+    background-size: 90%;
     padding: 3.5rem 5% 4.5rem;
   }
 }
@@ -1048,7 +1048,7 @@
   content: "";
   position: absolute;
   width: 650px;
-  height: 15rem;
+  height: 10rem;
   background-image: url("../img/access.svg");
   background-repeat: no-repeat;
   background-size: auto;
@@ -1059,7 +1059,6 @@
   .p-access__back::before {
     width: 80%;
     height: 25%;
-    right: -5%;
     background-size: 100%;
   }
 }
@@ -1067,7 +1066,6 @@
   .p-access__back::before {
     width: 90%;
     height: 7rem;
-    background-size: 100vw;
   }
 }
 .p-access__map {
@@ -1115,7 +1113,12 @@
   .p-contact {
     margin-left: 5%;
     padding: 15% 5% 15%;
-    background-size: 100%;
+    background-size: 80%;
+  }
+}
+@media screen and (max-width: 599px) {
+  .p-contact {
+    background-size: 90%;
   }
 }
 .p-contact__list {
@@ -1263,12 +1266,13 @@
   .p-project-detail {
     margin-left: 5%;
     padding: 15% 10.764% 15%;
-    background-size: 100%;
+    background-size: 80%;
   }
 }
 @media screen and (max-width: 599px) {
   .p-project-detail {
     padding: 3.5rem 5% 4.5rem;
+    background-size: 90%;
   }
 }
 .p-project-detail__explanation {
@@ -1309,13 +1313,13 @@
   .p-topics-detail {
     margin-left: 5%;
     padding: 15% 10.764% 15%;
-    background-size: 90%;
+    background-size: 80%;
   }
 }
 @media screen and (max-width: 599px) {
   .p-topics-detail {
     padding: 3.5rem 5% 4.5rem;
-    background-size: 100%;
+    background-size: 90%;
   }
 }
 .p-topics-detail__explanation {

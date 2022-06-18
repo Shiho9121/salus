@@ -12,13 +12,11 @@
     @include mq() {
         padding: 15% 10.764% 15%;
         margin-left: 5%;
-        background-size: 50%;
     }
     @include mq(sm) {
         border-radius: 2rem 0 0 2rem;
         padding: 3.5rem 10.764% 4.5rem;
-        background-size: 66%;
-        background-position: 65% 0;
+        background-size: 60%;
     }
     &__list {
         margin-top: 3rem;

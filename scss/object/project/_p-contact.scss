@@ -10,7 +10,10 @@
     @include mq() {
         margin-left: 5%;
         padding: 15% 5% 15%;
-        background-size: 100%;
+        background-size: 80%;
+    }
+    @include mq(sm) {
+        background-size: 90%;
     }
     &__list {
         margin-top: 3rem;

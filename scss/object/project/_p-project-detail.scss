@@ -10,10 +10,11 @@
     @include mq() {
         margin-left: 5%;
         padding: 15% 10.764% 15%;
-        background-size: 100%;
+        background-size: 80%;
     }
     @include mq(sm) {
         padding: 3.5rem 5% 4.5rem;
+        background-size: 90%;
     }
     &__explanation {
         margin-top: 1rem;

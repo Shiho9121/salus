@@ -7,15 +7,16 @@
     padding: 10.5rem 10.764% 8.5rem;
     background-image: url("../img/about-us.svg");
     background-repeat: no-repeat;
-    background-size: 60rem;
+    background-size: auto;
     @include mq() {
         margin-left: 5%;
         padding: 15% 10.764% 15%;
-        background-size: 100vw;
+        background-size: 80%;
     }
     @include mq(sm) {
         border-radius: 0 0 0 2rem;
         padding: 3.5rem 10.764% 4.5rem;
+        background-size: 90%;
     }
     &__text {
         text-align: center;

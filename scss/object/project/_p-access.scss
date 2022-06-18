@@ -20,7 +20,7 @@
             content: "";
             position: absolute;
             width: 650px;
-            height: 15rem;
+            height: 10rem;
             background-image: url("../img/access.svg");
             background-repeat: no-repeat;
             background-size: auto;
@@ -29,13 +29,11 @@
             @include mq() {
                 width: 80%;
                 height: 25%;
-                right: -5%;
                 background-size: 100%;
             }
             @include mq(sm) {
                 width: 90%;
                 height: 7rem;
-                background-size: 100vw;
             }
         }
     }
