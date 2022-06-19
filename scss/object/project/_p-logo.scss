@@ -1,0 +1,25 @@
+@use "../../foundations/responsive" as *;
+
+.p-logo {
+    width: 11%;
+    a {
+        img {
+            width: 100%;
+            @include mq() {
+                display: none;
+            }
+        }
+    }
+    &--sp {
+        display: none;
+        @include mq() {
+            display: block;
+            width: 30%;
+            padding-left: 5%;
+            padding-top: 0.8rem;
+        }
+        img {
+            width: 90px;
+        }
+    }
+}

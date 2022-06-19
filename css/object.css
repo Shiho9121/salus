@@ -501,8 +501,35 @@
   visibility: hidden;
 }
 
+.p-logo {
+  width: 11%;
+}
+.p-logo a img {
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .p-logo a img {
+    display: none;
+  }
+}
+.p-logo--sp {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .p-logo--sp {
+    display: block;
+    width: 30%;
+    padding-left: 5%;
+    padding-top: 0.8rem;
+  }
+}
+.p-logo--sp img {
+  width: 90px;
+}
+
 .p-nav--header {
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   padding: 0 8%;
   font-weight: bold;
 }
