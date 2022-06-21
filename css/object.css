@@ -502,7 +502,7 @@
 }
 
 .p-logo {
-  width: 11%;
+  width: 8%;
 }
 .p-logo a img {
   width: 100%;
@@ -534,7 +534,7 @@
   font-weight: bold;
 }
 .p-nav--header__list {
-  margin: 3rem 0;
+  margin: 2.5rem 0;
   align-items: center;
 }
 .p-nav--header__list li:not(:last-of-type) {

@@ -19,7 +19,7 @@
 
 main {
   min-height: calc(100vh - 228px);
-  margin-top: 114px;
+  margin-top: 99px;
 }
 @media screen and (max-width: 1024px) {
   main {
