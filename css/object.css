@@ -1238,6 +1238,9 @@
     font-size: 2rem;
   }
 }
+.c4-izmir figcaption {
+  z-index: 0 !important;
+}
 
 .c-nav-animation__header {
   line-height: 1.2em;
