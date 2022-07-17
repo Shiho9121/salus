@@ -57,7 +57,7 @@
   margin-right: 4rem;
 }
 .p-nav--header__contact a {
-  background: linear-gradient(90deg, #1a4dc7 0%, #5889d4 47%, #69d8fc 97%);
+  background: linear-gradient(90deg, rgb(26, 77, 199) 0%, rgb(88, 137, 212) 47%, rgb(105, 216, 252) 97%);
   color: #fff;
   padding: 0.7rem 1rem;
   border-radius: 20px;
@@ -1110,6 +1110,9 @@
   top: 0.8rem;
   transform: rotate(45deg);
 }
+.c-active--fixed-scroll {
+  overflow: hidden;
+}
 
 .c-back-dark {
   position: fixed;
@@ -1238,7 +1241,7 @@
 
 .c-nav-animation__header {
   line-height: 1.2em;
-  color: #0000;
+  color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 #3E4D62, 0 1.2em #1095c1;
   overflow: hidden;
   transition: 0.3s ease;
@@ -1261,7 +1264,7 @@
 }
 .c-nav-animation--footer {
   line-height: 1.2em;
-  color: #0000;
+  color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 #fff, 0 1.2em #ABEFFE;
   overflow: hidden;
   transition: 0.3s ease;
